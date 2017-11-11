@@ -19,11 +19,41 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        // Initialize Fetch Request
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Task")
+        // let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        
+        // Configure Fetch Request
+        fetchRequest.includesPropertyValues = false
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let managedObjectContext = delegate.persistentContainer.viewContext
+        
+        do {
+            let items = try managedObjectContext.fetch(fetchRequest) as! [NSManagedObject]
+            
+            for item in items {
+                managedObjectContext.delete(item)
+            }
+            
+            // Save Changes
+            try managedObjectContext.save()
+            
+        } catch {
+            // Error Handling
+            // ...
+        }
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
         title = "Equilibrium"
-        self.save(name: "test88")
+        loadGoals(tasks: ["Sport", "Personal Project", "Education", "Social", "Reading"])
+        //save(name: "test88")
         //self.tableView.reloadData()
-        save(name: "not cool")
+        //self.save(name: "not cool")
         //self.tableView.reloadData()
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: "Cell")
@@ -41,6 +71,7 @@ class ViewController: UIViewController {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Task")
         do {
             tasks = try managedContext.fetch(fetchRequest)
+            //print("YYYYYY",tasks[1].dictionaryWithValues(forKeys: ["name"]))
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
@@ -69,9 +100,15 @@ class ViewController: UIViewController {
         do {
             try managedContext.save()
             tasks.append(task)
-            print(tasks)
+            //print(tasks)
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func loadGoals(tasks: [String]) {
+        for task in tasks {
+            save(name: task)
         }
     }
 
