@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  PageControl
 //
-//  Created by Andrew Seeley on 2/2/17.
-//  Copyright © 2017 Seemu. All rights reserved.
+//  Created by Alexander Sanchez de la Cerda on 11.11.17.
+//  Copyright © 2017 Alexander Sanchez de la Cerda. All rights reserved.
 //
 
 import UIKit
