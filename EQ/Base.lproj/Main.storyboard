@@ -33,12 +33,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-220" y="322"/>
+            <point key="canvasLocation" x="-322" y="322"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6Rx-Vk-E5N">
             <objects>
-                <viewController storyboardIdentifier="petrol" id="RaQ-IH-qru" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="petrol" id="RaQ-IH-qru" customClass="ViewController" customModule="EQ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cPe-EX-HdP"/>
                         <viewControllerLayoutGuide type="bottom" id="SYN-tX-dpT"/>
@@ -53,7 +53,7 @@
             </objects>
             <point key="canvasLocation" x="1479.2" y="321.58920539730138"/>
         </scene>
-        <!--Equilibrium-->
+        <!--Eq-->
         <scene sceneID="8Vn-pA-9Fz">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vdi-FS-cxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -77,7 +77,7 @@
                             <outlet property="delegate" destination="KUc-Qa-i8o" id="PaD-bl-WRJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Equilibrium" id="UCZ-hT-onG"/>
+                    <navigationItem key="navigationItem" title="Eq" id="UCZ-hT-onG"/>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="671" y="420"/>
@@ -85,7 +85,7 @@
         <!--Navigation Controller-->
         <scene sceneID="j7o-R0-0rM">
             <objects>
-                <navigationController storyboardIdentifier="sbBlue" automaticallyAdjustsScrollViewInsets="NO" id="ZDO-w5-ikh" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="sbBlue8" automaticallyAdjustsScrollViewInsets="NO" id="ZDO-w5-ikh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="APE-IV-BI4">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
@@ -103,7 +103,7 @@
         <!--Equilibrium-->
         <scene sceneID="a0K-Al-YeU">
             <objects>
-                <viewController id="iEh-Vi-1pK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="doesWork" id="iEh-Vi-1pK" customClass="ViewController" customModule="EQ" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fiH-wP-3US"/>
                         <viewControllerLayoutGuide type="bottom" id="hch-gC-D9l"/>
@@ -111,21 +111,41 @@
                     <view key="view" contentMode="scaleToFill" id="0UQ-78-aO1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-LL-JnP">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aM6-Tp-8rH">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aM6-Tp-8rH" id="PEs-Cf-PN9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Equilibrium" id="Ru9-Bq-2fg"/>
+                    <connections>
+                        <outlet property="tableView" destination="kOT-LL-JnP" id="F9Z-Et-FQs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4v-z0-a71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="1071.8140929535234"/>
+            <point key="canvasLocation" x="1270" y="1597"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eid-oW-ddu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tps-Oi-NVb" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="sbBlue" automaticallyAdjustsScrollViewInsets="NO" id="tps-Oi-NVb" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ey9-s3-aAw">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ey9-s3-aAw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -135,7 +155,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXY-e6-51n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462" y="1736"/>
+            <point key="canvasLocation" x="484" y="2157"/>
         </scene>
     </scenes>
 </document>
