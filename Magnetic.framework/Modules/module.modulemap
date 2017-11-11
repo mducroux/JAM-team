@@ -1,0 +1,11 @@
+framework module Magnetic {
+  umbrella header "Magnetic.h"
+
+  export *
+  module * { export * }
+}
+
+module Magnetic.Swift {
+    header "Magnetic-Swift.h"
+    requires objc
+}

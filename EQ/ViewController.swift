@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreData
+
 // doesWork ??
 class ViewController: UIViewController {
     
-    var names: [String] = ["Sport", "Education", "Personal Project", "Social", "Reading"]
+    var tasks: [NSManagedObject] = []
     
     //UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
     
@@ -19,38 +21,80 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        title = "Equilibrium"
+        save(name: "test88")
+        save(name: "not cool")
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: "Cell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        self.names.append("test")
-        self.tableView.reloadData()
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
         
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Task")
+        do {
+            tasks = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func save(name: String) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "Task",
+                                                in: managedContext)!
+        
+        let task = NSManagedObject(entity: entity,
+                                     insertInto: managedContext)
+        
+        task.setValue(name, forKeyPath: "name")
+        
+        do {
+            try managedContext.save()
+            tasks.append(task)
+            print(tasks)
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
 
 
 }
 
+// MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return tasks.count
     }
     
     func tableView(_ tableView: UITableView,
-                   cellForRowAt indexPath: IndexPath)
-        -> UITableViewCell {
-            
-            let cell =
-                tableView.dequeueReusableCell(withIdentifier: "Cell",
-                                              for: indexPath)
-            cell.textLabel?.text = names[indexPath.row]
-            return cell
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let task = tasks[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
+                                                 for: indexPath)
+        cell.textLabel?.text = task.value(forKeyPath: "name") as? String
+        return cell
     }
 }
+
+
 
