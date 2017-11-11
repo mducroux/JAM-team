@@ -75,7 +75,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Equilibrium" id="Ru9-Bq-2fg"/>
                     <connections>
-                        <outlet property="tableView" destination="kOT-LL-JnP" id="AYI-LS-dVe"/>
+                        <outlet property="tableView" destination="kOT-LL-JnP" id="I0n-Ze-WTK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4v-z0-a71" userLabel="First Responder" sceneMemberID="firstResponder"/>

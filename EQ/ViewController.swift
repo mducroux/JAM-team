@@ -21,11 +21,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        title = "Equilibrium"
         save(name: "test88")
-
+        save(name: "not cool")
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: "Cell")
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,6 +68,7 @@ class ViewController: UIViewController {
         do {
             try managedContext.save()
             tasks.append(task)
+            print(tasks)
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
@@ -94,5 +95,6 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
 }
+
 
 
