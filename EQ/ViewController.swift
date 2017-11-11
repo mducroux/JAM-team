@@ -19,7 +19,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
+        
+    /**
+ /////////  begin of delete
+ */
         // Initialize Fetch Request
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Task")
         // let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
@@ -44,7 +48,9 @@ class ViewController: UIViewController {
             // ...
         }
         
-        
+   /**
+     /////////  end of delete
+   */
         
         // Do any additional setup after loading the view, typically from a nib.
         title = "Equilibrium"
@@ -57,6 +63,7 @@ class ViewController: UIViewController {
         //tableView.delegate      =   self as! UITableViewDelegate
         //tableView.dataSource    =   self
         if (tableView != nil) {
+            self.tableView.backgroundColor = UIColor.darkText
             loadGoals(tasks: ["Sport", "Personal Project", "Education", "Social", "Reading"])
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         }
@@ -130,8 +137,10 @@ extension ViewController: UITableViewDataSource {
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let task = tasks[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
-                                                 for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.backgroundColor = UIColor.clear
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 28)
         cell.textLabel?.text = task.value(forKeyPath: "name") as? String
         return cell
     }
