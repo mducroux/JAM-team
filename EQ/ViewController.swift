@@ -12,20 +12,61 @@ import CoreData
 // doesWork ??
 class ViewController: UIViewController {
     
-    var tasks: [NSManagedObject] = []
-    
     //UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
     
     @IBOutlet weak var tableView: UITableView!
+    var tasks: [NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+    /**
+ /////////  begin of delete
+ */
+        // Initialize Fetch Request
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Task")
+        // let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        
+        // Configure Fetch Request
+        fetchRequest.includesPropertyValues = false
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        let managedObjectContext = delegate.persistentContainer.viewContext
+        
+        do {
+            let items = try managedObjectContext.fetch(fetchRequest) as! [NSManagedObject]
+            
+            for item in items {
+                managedObjectContext.delete(item)
+            }
+            
+            // Save Changes
+            try managedObjectContext.save()
+            
+        } catch {
+            // Error Handling
+            // ...
+        }
+        
+   /**
+     /////////  end of delete
+   */
+        
         // Do any additional setup after loading the view, typically from a nib.
         title = "Equilibrium"
-        save(name: "test88")
-        save(name: "not cool")
-        tableView.register(UITableViewCell.self,
-                           forCellReuseIdentifier: "Cell")
+        
+        //save(name: "test88")
+        //self.tableView.reloadData()
+        //self.save(name: "not cool")
+        //self.tableView.reloadData()
+        //tableView = UITableView(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
+        //tableView.delegate      =   self as! UITableViewDelegate
+        //tableView.dataSource    =   self
+        if (tableView != nil) {
+            self.tableView.backgroundColor = UIColor.white
+            loadGoals(tasks: ["Sport", "Personal Project", "Education", "Social", "Reading"])
+            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,15 +81,16 @@ class ViewController: UIViewController {
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Task")
         do {
             tasks = try managedContext.fetch(fetchRequest)
+            //print("YYYYYY",tasks[1].dictionaryWithValues(forKeys: ["name"]))
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
     
     func save(name: String) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -68,9 +110,15 @@ class ViewController: UIViewController {
         do {
             try managedContext.save()
             tasks.append(task)
-            print(tasks)
+            //print(tasks)
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
+    
+    func loadGoals(tasks: [String]) {
+        for task in tasks {
+            save(name: task)
         }
     }
 
@@ -89,12 +137,15 @@ extension ViewController: UITableViewDataSource {
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let task = tasks[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
-                                                 for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.backgroundColor = UIColor.clear
+        cell.textLabel?.textColor = UIColor.darkGray
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 28)
         cell.textLabel?.text = task.value(forKeyPath: "name") as? String
         return cell
     }
 }
+
 
 
 
