@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         //tableView.delegate      =   self as! UITableViewDelegate
         //tableView.dataSource    =   self
         if (tableView != nil) {
-            self.tableView.backgroundColor = UIColor.lightGray
+            self.tableView.backgroundColor = UIColor.white
             loadGoals(tasks: ["Sport", "Personal Project", "Education", "Social", "Reading"])
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         }
@@ -139,7 +139,7 @@ extension ViewController: UITableViewDataSource {
         let task = tasks[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.backgroundColor = UIColor.clear
-        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.textColor = UIColor.darkGray
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 28)
         cell.textLabel?.text = task.value(forKeyPath: "name") as? String
         return cell
