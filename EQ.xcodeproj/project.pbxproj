@@ -40,6 +40,7 @@
 		11BD92A01FB72E2300946FFD /* EQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BD92A41FB72E2300946FFD /* EQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EQTests.swift; sourceTree = "<group>"; };
 		11BD92A61FB72E2300946FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BD92AF1FB7307900946FFD /* EQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EQ.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		11BD928A1FB72E2200946FFD /* EQ */ = {
 			isa = PBXGroup;
 			children = (
+				11BD92AF1FB7307900946FFD /* EQ.entitlements */,
 				11BD928B1FB72E2200946FFD /* AppDelegate.swift */,
 				11BD928D1FB72E2200946FFD /* RootViewController.swift */,
 				11BD928F1FB72E2200946FFD /* DataViewController.swift */,
@@ -153,6 +155,14 @@
 					11BD92871FB72E2200946FFD = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					11BD929F1FB72E2300946FFD = {
 						CreatedOnToolsVersion = 9.1;
@@ -361,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EQ/EQ.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4PAM48SVJ;
 				INFOPLIST_FILE = EQ/Info.plist;
@@ -377,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = EQ/EQ.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4PAM48SVJ;
 				INFOPLIST_FILE = EQ/Info.plist;
