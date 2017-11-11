@@ -63,7 +63,7 @@ class ViewController: UIViewController {
         //tableView.delegate      =   self as! UITableViewDelegate
         //tableView.dataSource    =   self
         if (tableView != nil) {
-            self.tableView.backgroundColor = UIColor.darkText
+            self.tableView.backgroundColor = UIColor.lightGray
             loadGoals(tasks: ["Sport", "Personal Project", "Education", "Social", "Reading"])
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         }
