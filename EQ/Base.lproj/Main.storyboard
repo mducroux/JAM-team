@@ -28,30 +28,12 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" red="0.52495553449999999" green="0.73169380790000005" blue="0.79885612439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-220" y="322"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="7mY-hd-Vma">
-            <objects>
-                <viewController storyboardIdentifier="sbBlue" id="bA0-OI-tpg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xQV-e5-9BW"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qbo-tY-5yY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="sbBlue" id="aCb-HG-rDO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.52495553449999999" green="0.73169380790000005" blue="0.79885612439999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lZn-qi-T1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="476" y="322"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6Rx-Vk-E5N">
@@ -69,7 +51,91 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z06-z7-I1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="322"/>
+            <point key="canvasLocation" x="1479.2" y="321.58920539730138"/>
+        </scene>
+        <!--Equilibrium-->
+        <scene sceneID="8Vn-pA-9Fz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdi-FS-cxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="sbBlue2" id="KUc-Qa-i8o" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gqg-LU-qcB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell12" id="sjj-vn-MI7">
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sjj-vn-MI7" id="uqx-vY-OWn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KUc-Qa-i8o" id="R5p-4s-EQ1"/>
+                            <outlet property="delegate" destination="KUc-Qa-i8o" id="PaD-bl-WRJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Equilibrium" id="UCZ-hT-onG"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="671" y="420"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="j7o-R0-0rM">
+            <objects>
+                <navigationController storyboardIdentifier="sbBlue" automaticallyAdjustsScrollViewInsets="NO" id="ZDO-w5-ikh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="APE-IV-BI4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KUc-Qa-i8o" kind="relationship" relationship="rootViewController" id="0gW-1Q-xcc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eL3-Cm-exN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-108" y="1088"/>
+        </scene>
+        <!--Equilibrium-->
+        <scene sceneID="a0K-Al-YeU">
+            <objects>
+                <viewController id="iEh-Vi-1pK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fiH-wP-3US"/>
+                        <viewControllerLayoutGuide type="bottom" id="hch-gC-D9l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0UQ-78-aO1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Equilibrium" id="Ru9-Bq-2fg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4v-z0-a71" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="1071.8140929535234"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eid-oW-ddu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tps-Oi-NVb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ey9-s3-aAw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iEh-Vi-1pK" kind="relationship" relationship="rootViewController" id="xbz-wY-7Kv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXY-e6-51n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="1736"/>
         </scene>
     </scenes>
 </document>
