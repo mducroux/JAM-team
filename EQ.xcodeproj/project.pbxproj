@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		115BC4311FB73CE500597DE2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115BC42F1FB73CE500597DE2 /* PageViewController.swift */; };
-		115BC4321FB73CE500597DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115BC4301FB73CE500597DE2 /* ViewController.swift */; };
-		115BC4351FB73CEF00597DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115BC4331FB73CEF00597DE2 /* Main.storyboard */; };
 		11BD928C1FB72E2200946FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD928B1FB72E2200946FFD /* AppDelegate.swift */; };
 		11BD92971FB72E2200946FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BD92961FB72E2200946FFD /* Assets.xcassets */; };
 		11BD929A1FB72E2200946FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD92981FB72E2200946FFD /* LaunchScreen.storyboard */; };
 		11BD92A51FB72E2300946FFD /* EQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD92A41FB72E2300946FFD /* EQTests.swift */; };
-		A14ECE5B1FB7581900113DB7 /* Magnetic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14ECE5A1FB7581900113DB7 /* Magnetic.framework */; };
 		A14ECE5D1FB7690100113DB7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14ECE5C1FB7690100113DB7 /* Extensions.swift */; };
+		A14ECE891FB79C8A00113DB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14ECE871FB79C8A00113DB7 /* ViewController.swift */; };
+		A14ECE8A1FB79C8A00113DB7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14ECE881FB79C8A00113DB7 /* PageViewController.swift */; };
+		A14ECE8D1FB79CA100113DB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14ECE8B1FB79CA100113DB7 /* Main.storyboard */; };
+		A14ECE911FB79CC100113DB7 /* EQ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A14ECE8E1FB79CC100113DB7 /* EQ.xcdatamodeld */; };
+		A14ECE9E1FB79F7E00113DB7 /* Magnetic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14ECE9B1FB79F6B00113DB7 /* Magnetic.framework */; };
+		A14ECEA01FB7B78D00113DB7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14ECE9F1FB7B78D00113DB7 /* StartViewController.swift */; };
 		A1C1273B1FB74A4F0074F04B /* Bubbles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C1273A1FB74A4F0074F04B /* Bubbles.storyboard */; };
 		A1C1273D1FB74BC30074F04B /* BubblesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1273C1FB74BC30074F04B /* BubblesViewController.swift */; };
 		BAD8DFCFDE7D5675AE4B6E27 /* Pods_EQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD27492F050EEF32D5BCC370 /* Pods_EQTests.framework */; };
@@ -29,12 +31,36 @@
 			remoteGlobalIDString = 11BD92871FB72E2200946FFD;
 			remoteInfo = EQ;
 		};
+		A14ECE9A1FB79F6B00113DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14ECE951FB79F6B00113DB7 /* Magnetic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B6914BB1E70F6A90007896C;
+			remoteInfo = Magnetic;
+		};
+		A14ECE9C1FB79F6B00113DB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A14ECE951FB79F6B00113DB7 /* Magnetic.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B6914CA1E70F6B50007896C;
+			remoteInfo = Example;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A14ECE941FB79F2000113DB7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		115BC42F1FB73CE500597DE2 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		115BC4301FB73CE500597DE2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		115BC4341FB73CEF00597DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11BD92881FB72E2200946FFD /* EQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BD928B1FB72E2200946FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BD92961FB72E2200946FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,8 +73,14 @@
 		3977F0B8A2805BA8C9071B20 /* Pods-EQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EQ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EQ/Pods-EQ.debug.xcconfig"; sourceTree = "<group>"; };
 		652769109EB002C15180288E /* Pods-EQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EQTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EQTests/Pods-EQTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8533274ACAF72D572CB3BCF6 /* Pods-EQTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EQTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EQTests/Pods-EQTests.release.xcconfig"; sourceTree = "<group>"; };
-		A14ECE5A1FB7581900113DB7 /* Magnetic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Magnetic.framework; sourceTree = "<group>"; };
 		A14ECE5C1FB7690100113DB7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A14ECE871FB79C8A00113DB7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A14ECE881FB79C8A00113DB7 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		A14ECE8C1FB79CA100113DB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A14ECE8F1FB79CC100113DB7 /* EQ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EQ.xcdatamodel; sourceTree = "<group>"; };
+		A14ECE901FB79CC100113DB7 /* EQ.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = EQ.entitlements; sourceTree = "<group>"; };
+		A14ECE951FB79F6B00113DB7 /* Magnetic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Magnetic.xcodeproj; path = "../../../Downloads/Magnetic-master/Magnetic.xcodeproj"; sourceTree = "<group>"; };
+		A14ECE9F1FB7B78D00113DB7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A1C1273A1FB74A4F0074F04B /* Bubbles.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bubbles.storyboard; sourceTree = "<group>"; };
 		A1C1273C1FB74BC30074F04B /* BubblesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesViewController.swift; sourceTree = "<group>"; };
 		BD27492F050EEF32D5BCC370 /* Pods_EQTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EQTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14ECE5B1FB7581900113DB7 /* Magnetic.framework in Frameworks */,
+				A14ECE9E1FB79F7E00113DB7 /* Magnetic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,15 +130,19 @@
 		11BD928A1FB72E2200946FFD /* EQ */ = {
 			isa = PBXGroup;
 			children = (
-				11BD92AF1FB7307900946FFD /* EQ.entitlements */,
+				A14ECE901FB79CC100113DB7 /* EQ.entitlements */,
+				A14ECE8E1FB79CC100113DB7 /* EQ.xcdatamodeld */,
 				11BD928B1FB72E2200946FFD /* AppDelegate.swift */,
 				11BD92961FB72E2200946FFD /* Assets.xcassets */,
-				115BC4331FB73CEF00597DE2 /* Main.storyboard */,
 				11BD92981FB72E2200946FFD /* LaunchScreen.storyboard */,
 				A1C1273C1FB74BC30074F04B /* BubblesViewController.swift */,
+				A14ECE8B1FB79CA100113DB7 /* Main.storyboard */,
 				A1C1273A1FB74A4F0074F04B /* Bubbles.storyboard */,
+				A14ECE881FB79C8A00113DB7 /* PageViewController.swift */,
+				A14ECE871FB79C8A00113DB7 /* ViewController.swift */,
 				11BD929B1FB72E2200946FFD /* Info.plist */,
 				A14ECE5C1FB7690100113DB7 /* Extensions.swift */,
+				A14ECE9F1FB7B78D00113DB7 /* StartViewController.swift */,
 			);
 			path = EQ;
 			sourceTree = "<group>";
@@ -123,11 +159,20 @@
 		9AF33E7D5B601F5CD4E068FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A14ECE5A1FB7581900113DB7 /* Magnetic.framework */,
+				A14ECE951FB79F6B00113DB7 /* Magnetic.xcodeproj */,
 				2459F412F7299635393662C6 /* Pods_EQ.framework */,
 				BD27492F050EEF32D5BCC370 /* Pods_EQTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A14ECE961FB79F6B00113DB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A14ECE9B1FB79F6B00113DB7 /* Magnetic.framework */,
+				A14ECE9D1FB79F6B00113DB7 /* Example.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		D5440DB214B2705A4A84227C /* Pods */ = {
@@ -154,6 +199,7 @@
 				11BD92861FB72E2200946FFD /* Resources */,
 				62E35444172BA9D297F99E0D /* [CP] Embed Pods Frameworks */,
 				25B5D56015ED3231AA2B0BB1 /* [CP] Copy Pods Resources */,
+				A14ECE941FB79F2000113DB7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +271,12 @@
 			mainGroup = 11BD927F1FB72E2200946FFD;
 			productRefGroup = 11BD92891FB72E2200946FFD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A14ECE961FB79F6B00113DB7 /* Products */;
+					ProjectRef = A14ECE951FB79F6B00113DB7 /* Magnetic.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				11BD92871FB72E2200946FFD /* EQ */,
@@ -232,6 +284,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A14ECE9B1FB79F6B00113DB7 /* Magnetic.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Magnetic.framework;
+			remoteRef = A14ECE9A1FB79F6B00113DB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A14ECE9D1FB79F6B00113DB7 /* Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Example.app;
+			remoteRef = A14ECE9C1FB79F6B00113DB7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		11BD92861FB72E2200946FFD /* Resources */ = {
@@ -241,6 +310,7 @@
 				A1C1273B1FB74A4F0074F04B /* Bubbles.storyboard in Resources */,
 				11BD929A1FB72E2200946FFD /* LaunchScreen.storyboard in Resources */,
 				11BD92971FB72E2200946FFD /* Assets.xcassets in Resources */,
+				A14ECE8D1FB79CA100113DB7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,10 +430,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A14ECE891FB79C8A00113DB7 /* ViewController.swift in Sources */,
+				A14ECEA01FB7B78D00113DB7 /* StartViewController.swift in Sources */,
 				A14ECE5D1FB7690100113DB7 /* Extensions.swift in Sources */,
 				A1C1273D1FB74BC30074F04B /* BubblesViewController.swift in Sources */,
+				A14ECE911FB79CC100113DB7 /* EQ.xcdatamodeld in Sources */,
+				A14ECE8A1FB79C8A00113DB7 /* PageViewController.swift in Sources */,
 				11BD928C1FB72E2200946FFD /* AppDelegate.swift in Sources */,
-				115BC4311FB73CE500597DE2 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +465,14 @@
 				11BD92991FB72E2200946FFD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A14ECE8B1FB79CA100113DB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A14ECE8C1FB79CA100113DB7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -621,12 +702,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		11F041B01FB77A29001113F3 /* EQ.xcdatamodeld */ = {
+		A14ECE8E1FB79CC100113DB7 /* EQ.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				11F041B11FB77A29001113F3 /* EQ.xcdatamodel */,
+				A14ECE8F1FB79CC100113DB7 /* EQ.xcdatamodel */,
 			);
-			currentVersion = 11F041B11FB77A29001113F3 /* EQ.xcdatamodel */;
+			currentVersion = A14ECE8F1FB79CC100113DB7 /* EQ.xcdatamodel */;
 			path = EQ.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -85,14 +85,14 @@ extension BubblesViewController: MagneticDelegate {
             n = n - 1
             label.text = "Choose \(n) Categories"
         } else {
-            let main = UIStoryboard(name: "Main", bundle: nil)
-            let vc = main.instantiateViewController(withIdentifier: "RootViewController") as UIViewController
-            present(vc, animated: true, completion: nil)
+            self.present(PageViewController(), animated: true, completion:nil)
         }
         print("didSelect -> \(node)")
     }
     
     func magnetic(_ magnetic: Magnetic, didDeselect node: Node) {
+        n = n + 1
+        label.text = "Choose \(n) Categories"
         print("didDeselect -> \(node)")
     }
     
