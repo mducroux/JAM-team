@@ -12,18 +12,19 @@ import CoreData
 // doesWork ??
 class ViewController: UIViewController {
     
-    var tasks: [NSManagedObject] = []
-    
     //UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: viewController)
     
     @IBOutlet weak var tableView: UITableView!
+    var tasks: [NSManagedObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         title = "Equilibrium"
-        save(name: "test88")
+        self.save(name: "test88")
+        //self.tableView.reloadData()
         save(name: "not cool")
+        //self.tableView.reloadData()
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: "Cell")
     }
@@ -45,10 +46,10 @@ class ViewController: UIViewController {
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
     
     func save(name: String) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -95,6 +96,7 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
 }
+
 
 
 
