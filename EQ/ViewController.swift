@@ -21,7 +21,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         tableView.register(UITableViewCell.self,
                            forCellReuseIdentifier: "Cell")
+        
+        self.names.append("test")
         self.tableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {

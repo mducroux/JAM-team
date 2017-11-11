@@ -53,43 +53,6 @@
             </objects>
             <point key="canvasLocation" x="1479.2" y="321.58920539730138"/>
         </scene>
-        <!--Eq-->
-        <scene sceneID="8Vn-pA-9Fz">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdi-FS-cxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController storyboardIdentifier="sbBlue2" id="KUc-Qa-i8o" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Gqg-LU-qcB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <connections>
-                            <outlet property="dataSource" destination="KUc-Qa-i8o" id="R5p-4s-EQ1"/>
-                            <outlet property="delegate" destination="KUc-Qa-i8o" id="PaD-bl-WRJ"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Eq" id="UCZ-hT-onG"/>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="671" y="420"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="j7o-R0-0rM">
-            <objects>
-                <navigationController storyboardIdentifier="sbBlue8" automaticallyAdjustsScrollViewInsets="NO" id="ZDO-w5-ikh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="APE-IV-BI4">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="KUc-Qa-i8o" kind="relationship" relationship="rootViewController" id="0gW-1Q-xcc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eL3-Cm-exN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-108" y="1088"/>
-        </scene>
         <!--Equilibrium-->
         <scene sceneID="a0K-Al-YeU">
             <objects>
@@ -106,28 +69,18 @@
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aM6-Tp-8rH">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aM6-Tp-8rH" id="PEs-Cf-PN9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Equilibrium" id="Ru9-Bq-2fg"/>
                     <connections>
-                        <outlet property="tableView" destination="kOT-LL-JnP" id="F9Z-Et-FQs"/>
+                        <outlet property="tableView" destination="kOT-LL-JnP" id="AYI-LS-dVe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S4v-z0-a71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1270" y="1597"/>
+            <point key="canvasLocation" x="572" y="339"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eid-oW-ddu">
@@ -145,7 +98,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXY-e6-51n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="2157"/>
+            <point key="canvasLocation" x="-223" y="1111"/>
         </scene>
     </scenes>
 </document>

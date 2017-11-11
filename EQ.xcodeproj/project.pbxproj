@@ -14,6 +14,7 @@
 		11BD92971FB72E2200946FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BD92961FB72E2200946FFD /* Assets.xcassets */; };
 		11BD929A1FB72E2200946FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD92981FB72E2200946FFD /* LaunchScreen.storyboard */; };
 		11BD92A51FB72E2300946FFD /* EQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD92A41FB72E2300946FFD /* EQTests.swift */; };
+		11F041B21FB77A29001113F3 /* EQ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11F041B01FB77A29001113F3 /* EQ.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		11BD92A41FB72E2300946FFD /* EQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EQTests.swift; sourceTree = "<group>"; };
 		11BD92A61FB72E2300946FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11BD92AF1FB7307900946FFD /* EQ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EQ.entitlements; sourceTree = "<group>"; };
+		11F041B11FB77A29001113F3 /* EQ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EQ.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				115BC4331FB73CEF00597DE2 /* Main.storyboard */,
 				11BD92981FB72E2200946FFD /* LaunchScreen.storyboard */,
 				11BD929B1FB72E2200946FFD /* Info.plist */,
+				11F041B01FB77A29001113F3 /* EQ.xcdatamodeld */,
 			);
 			path = EQ;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				115BC4321FB73CE500597DE2 /* ViewController.swift in Sources */,
+				11F041B21FB77A29001113F3 /* EQ.xcdatamodeld in Sources */,
 				11BD928C1FB72E2200946FFD /* AppDelegate.swift in Sources */,
 				115BC4311FB73CE500597DE2 /* PageViewController.swift in Sources */,
 			);
@@ -462,6 +466,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		11F041B01FB77A29001113F3 /* EQ.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				11F041B11FB77A29001113F3 /* EQ.xcdatamodel */,
+			);
+			currentVersion = 11F041B11FB77A29001113F3 /* EQ.xcdatamodel */;
+			path = EQ.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 11BD92801FB72E2200946FFD /* Project object */;
 }
