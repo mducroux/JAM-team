@@ -19,9 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+                
         // Initialize Fetch Request
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Task")
         // let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
@@ -50,13 +48,18 @@ class ViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
         title = "Equilibrium"
-        loadGoals(tasks: ["Sport", "Personal Project", "Education", "Social", "Reading"])
+        
         //save(name: "test88")
         //self.tableView.reloadData()
         //self.save(name: "not cool")
         //self.tableView.reloadData()
-        tableView.register(UITableViewCell.self,
-                           forCellReuseIdentifier: "Cell")
+        //tableView = UITableView(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
+        //tableView.delegate      =   self as! UITableViewDelegate
+        //tableView.dataSource    =   self
+        if (tableView != nil) {
+            loadGoals(tasks: ["Sport", "Personal Project", "Education", "Social", "Reading"])
+            tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
