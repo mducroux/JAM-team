@@ -18,10 +18,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var tasks: [NSManagedObject] = []
     
+    //@IBOutlet weak var checkbox: M13Checkbox!
+    var checkboxes = [M13Checkbox]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        for _ in 1...5 {
+            checkboxes.append(M13Checkbox(frame: CGRect(x: 20.0, y: 0.0, width: 80.0, height: 80.0)))
+        }
+        print(checkboxes.count)
     /**
  /////////  begin of delete
  */
@@ -136,9 +142,20 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        print(indexPath.row.description)
         let task = tasks[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+//        let checkbox = M13Checkbox(frame: CGRect(x: 20.0, y: 0.0, width: 80.0, height: 80.0))
+       // M13Checkbox.Animation.bounce(M13Checkbox.AnimationStyle.fill)
+        
+        /// here we handle our checkboxes
+        let checkbox = checkboxes[indexPath.row]
+        checkbox.checkmarkLineWidth = CGFloat(2.8)
+        checkbox.boxLineWidth = CGFloat(2.8)
+        checkbox.tintColor = UIColor(red:0.19, green:0.39, blue:0.48, alpha:1.0) //.init(red: CGFloat(48), green: CGFloat(100), blue: CGFloat(122), alpha: CGFloat(1))
+        cell.contentView.addSubview(checkbox)
+        
+        /// here we handle the cell & its text
         cell.backgroundColor = UIColor.clear
         cell.textLabel?.textColor = UIColor.darkGray
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 28)
