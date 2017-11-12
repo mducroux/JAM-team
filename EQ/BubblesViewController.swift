@@ -15,11 +15,6 @@ class BubblesViewController: UIViewController {
     @IBOutlet weak var magneticView: MagneticView! {
         didSet {
             magnetic.magneticDelegate = self
-            #if DEBUG
-                magneticView.showsFPS = true
-                magneticView.showsDrawCount = true
-                magneticView.showsQuadCount = true
-            #endif
         }
     }
     

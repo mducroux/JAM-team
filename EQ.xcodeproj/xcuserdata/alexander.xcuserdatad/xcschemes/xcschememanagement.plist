@@ -7,7 +7,11 @@
 		<key>EQ.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
+			<integer>1</integer>
+=======
 			<integer>6</integer>
+>>>>>>> cbfb9395873e071fdfcb9a92754c0d6729f721e2
 		</dict>
 	</dict>
 </dict>

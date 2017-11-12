@@ -1,0 +1,6 @@
+framework module Pods_M13Checkbox_Demo {
+  umbrella header "Pods-M13Checkbox Demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

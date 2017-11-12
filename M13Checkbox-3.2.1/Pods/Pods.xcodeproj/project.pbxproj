@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01294EAF223856AA181E3DD6D9E8EC65 /* HRColorMapView.h in Headers */ = {isa = PBXBuildFile; fileRef = D3B8BD6235A883DD72F647247BCDB89B /* HRColorMapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077B950E4D8D81888C0340610F0AACEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		115F824F0E2805E3359CE03964891A15 /* HRHSVColorUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 560CB71AAAF1F2E22A8E35931CAC19B2 /* HRHSVColorUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FB0ADA0B68D6333125D559A574796E6 /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A606F7BE06E0749E0588CB2B89107D /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m */; };
+		318A2BBB61154F1C07101169EC70A4E3 /* HRColorCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E405528BBE3485A77EDD2BE053008 /* HRColorCursor.m */; };
+		3649BA151D71326A383604AAAAB5D33D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		3E0FDC779516CC4FA0CE85EEAEA0A9AF /* HRBrightnessCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1434856720CBCCF02D5FFDB53CED7A /* HRBrightnessCursor.m */; };
+		42364581B3C9360862FE47A1C2502069 /* Color-Picker-for-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ACC2DF10769B8E501658DFE100CE6650 /* Color-Picker-for-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		439AF6A4B4435633A358FD1D9D60B58E /* HRBrightnessCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = A938B6260C2F367CF776737F5336755A /* HRBrightnessCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49795EFB9BBAC6216B1996DBC068F006 /* HRColorInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048AAE6EAB96E895C6D48A6DCD9A3C64 /* HRColorInfoView.m */; };
+		4F429EC3EBDF7B0D73C967AF144C9B9D /* Pods-M13Checkbox Demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 714269CAFA4286FFCAF560279DC8E121 /* Pods-M13Checkbox Demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		567C2C9AB63B4D965B060CA1DA9D9B33 /* HRColorCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = A87CB1DDAC69AC44B2EF2B1AE05D43B3 /* HRColorCursor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D3F2C41CA3ECBA8B6F2652770C5FB9A /* Pods-M13Checkbox Demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF9396B035216D5227641E2C1B2CF6C /* Pods-M13Checkbox Demo-dummy.m */; };
+		5E599C00A8EFEE7929240153AAABFC83 /* HRBrightnessSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BDB2421D4AEFCD8907287754173E58C /* HRBrightnessSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64355F5F2F5C159B9F8B7259D9428584 /* UIImage+CoreGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2B90319E6F644F53961008AE5621D9 /* UIImage+CoreGraphics.m */; };
+		670B2BAAE9BCE7C9DFD43132089ECA71 /* HRHSVColorUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CF914BCCFAB82A0E496D4DCC584054 /* HRHSVColorUtil.m */; };
+		68F274887D25303A29329ADA692F35D9 /* Color-Picker-for-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D3C893687241B87D53DA29F34A234C /* Color-Picker-for-iOS-dummy.m */; };
+		73CA144112FF73D7A37EADE1FB243B28 /* PBDCarouselCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6B0AD2AF4300F17380E8D1384A5709 /* PBDCarouselCollectionViewLayout.m */; };
+		78D703BBB33BB9678A9075D3E7C27AC3 /* HRColorMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1582F485504EA4B8A7157F50AB2D6C13 /* HRColorMapView.m */; };
+		93D4052DB18C73314B0709DF0E51CEFF /* PBDCarouselCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CC9CB6CC053AA97E241D68F1BB5EA1 /* PBDCarouselCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		940FAA7FE8AA8D38C0A0E813A4617D16 /* PBDCarouselCollectionViewLayoutPropertiesCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E9A0C7935594B0C83B055CBBDACF1A40 /* PBDCarouselCollectionViewLayoutPropertiesCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2942337892B9929E6EC6FAD3F48EAF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		A3D24E1EE7D52F06BF12FBB89789F63D /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h in Headers */ = {isa = PBXBuildFile; fileRef = CA6DB1E821397B8BD9EC797B5DE403F6 /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A70F0DA38C400C8BD4291AFB2A19AAE7 /* PBDCarouselCollectionViewLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF525A348BC4E688924A1009BFF945E /* PBDCarouselCollectionViewLayout-dummy.m */; };
+		C5FA65B20F9BCBDD86592B4036F2A69C /* UIImage+CoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = FE176BB2D5CB052A70B1FC833A9B5A39 /* UIImage+CoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C966B983E62ECE8068F66FD16A14D4D8 /* HRBrightnessSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3858C925E875C5334809B56F5DE42B4F /* HRBrightnessSlider.m */; };
+		CC020AC34D5650ABDB999B8815B532AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D00D3957D07F1213461BC0B7EE367979 /* HRColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FCFADB86293937B26008BC2373DB95 /* HRColorPickerView.m */; };
+		F55AC0651CF175205E1F7CDD7BBEC84F /* HRColorInfoView.h in Headers */ = {isa = PBXBuildFile; fileRef = DB430D772ECAC946BD1908DE45AD4F4B /* HRColorInfoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F68F4FBEBF7BE8C4BDEB91E1315BDDB4 /* PBDCarouselCollectionViewLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C374A7BD1146A70AD222D7985DFED0 /* PBDCarouselCollectionViewLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE540AB638176ECBADC41A9AFEF56B96 /* HRColorPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E5B7E9E8552BE782857ABCFD6C2C0E /* HRColorPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1307A2364EC7069131F648732E7BCD7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDFD0623C695330DBB9B5DCFD0E779C4;
+			remoteInfo = PBDCarouselCollectionViewLayout;
+		};
+		13FF4E6CA6852341E77C8EE238DC5057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B25E1601C445A6A75E55543DB48D091;
+			remoteInfo = "Color-Picker-for-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		048AAE6EAB96E895C6D48A6DCD9A3C64 /* HRColorInfoView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRColorInfoView.m; path = ColorPicker/HRColorInfoView.m; sourceTree = "<group>"; };
+		12CF914BCCFAB82A0E496D4DCC584054 /* HRHSVColorUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRHSVColorUtil.m; path = ColorPicker/HRHSVColorUtil.m; sourceTree = "<group>"; };
+		1582F485504EA4B8A7157F50AB2D6C13 /* HRColorMapView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRColorMapView.m; path = ColorPicker/HRColorMapView.m; sourceTree = "<group>"; };
+		1A8E405528BBE3485A77EDD2BE053008 /* HRColorCursor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRColorCursor.m; path = ColorPicker/HRColorCursor.m; sourceTree = "<group>"; };
+		1FF525A348BC4E688924A1009BFF945E /* PBDCarouselCollectionViewLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PBDCarouselCollectionViewLayout-dummy.m"; sourceTree = "<group>"; };
+		217FC4EE17A2B5406F8917B942F33901 /* PBDCarouselCollectionViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PBDCarouselCollectionViewLayout.framework; path = PBDCarouselCollectionViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FCFADB86293937B26008BC2373DB95 /* HRColorPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRColorPickerView.m; path = ColorPicker/HRColorPickerView.m; sourceTree = "<group>"; };
+		2BD970297C591ABE3A12A031A894BE4A /* Color-Picker-for-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Color-Picker-for-iOS.xcconfig"; sourceTree = "<group>"; };
+		35B9902F335F036DF4395756167C71BD /* Color-Picker-for-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Color-Picker-for-iOS-prefix.pch"; sourceTree = "<group>"; };
+		3858C925E875C5334809B56F5DE42B4F /* HRBrightnessSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessSlider.m; path = ColorPicker/HRBrightnessSlider.m; sourceTree = "<group>"; };
+		424AB35E562C2ED46B2E946BA27B98C5 /* Pods-M13Checkbox Demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-M13Checkbox Demo.modulemap"; sourceTree = "<group>"; };
+		4BDCBA0F8CC15E5A2E7444283AA15F2E /* Color-Picker-for-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Color-Picker-for-iOS.modulemap"; sourceTree = "<group>"; };
+		560CB71AAAF1F2E22A8E35931CAC19B2 /* HRHSVColorUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRHSVColorUtil.h; path = ColorPicker/HRHSVColorUtil.h; sourceTree = "<group>"; };
+		5653368601D3577BF0D2368B9EA027F1 /* Pods-M13Checkbox Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-M13Checkbox Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		5D1434856720CBCCF02D5FFDB53CED7A /* HRBrightnessCursor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HRBrightnessCursor.m; path = ColorPicker/HRBrightnessCursor.m; sourceTree = "<group>"; };
+		5D49560628F6447A6F7CA53D0D164159 /* PBDCarouselCollectionViewLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PBDCarouselCollectionViewLayout.xcconfig; sourceTree = "<group>"; };
+		61A606F7BE06E0749E0588CB2B89107D /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m; path = CarouselCollectionViewLayout/Classes/Lib/Internal/PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m; sourceTree = "<group>"; };
+		63C374A7BD1146A70AD222D7985DFED0 /* PBDCarouselCollectionViewLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PBDCarouselCollectionViewLayout-umbrella.h"; sourceTree = "<group>"; };
+		714269CAFA4286FFCAF560279DC8E121 /* Pods-M13Checkbox Demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-M13Checkbox Demo-umbrella.h"; sourceTree = "<group>"; };
+		7AD426826902BB7BB46C177DFE19D7A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB842CB8BFA7BA2A70EF5D4B9DCA3BB /* Pods-M13Checkbox Demo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-M13Checkbox Demo-resources.sh"; sourceTree = "<group>"; };
+		87D3C893687241B87D53DA29F34A234C /* Color-Picker-for-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Color-Picker-for-iOS-dummy.m"; sourceTree = "<group>"; };
+		8C5B03A59D6058809898E17547727046 /* PBDCarouselCollectionViewLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PBDCarouselCollectionViewLayout.modulemap; sourceTree = "<group>"; };
+		8E090B0D09DB3C3B2DDE766C5FCF8E9B /* Pods-M13Checkbox Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-M13Checkbox Demo.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BDB2421D4AEFCD8907287754173E58C /* HRBrightnessSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRBrightnessSlider.h; path = ColorPicker/HRBrightnessSlider.h; sourceTree = "<group>"; };
+		A87CB1DDAC69AC44B2EF2B1AE05D43B3 /* HRColorCursor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRColorCursor.h; path = ColorPicker/HRColorCursor.h; sourceTree = "<group>"; };
+		A938B6260C2F367CF776737F5336755A /* HRBrightnessCursor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRBrightnessCursor.h; path = ColorPicker/HRBrightnessCursor.h; sourceTree = "<group>"; };
+		A9CC9CB6CC053AA97E241D68F1BB5EA1 /* PBDCarouselCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBDCarouselCollectionViewLayout.h; path = CarouselCollectionViewLayout/Classes/Lib/PBDCarouselCollectionViewLayout.h; sourceTree = "<group>"; };
+		AB033E02D7AE583C18A02BEDBD9FF9DA /* PBDCarouselCollectionViewLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PBDCarouselCollectionViewLayout-prefix.pch"; sourceTree = "<group>"; };
+		ACC2DF10769B8E501658DFE100CE6650 /* Color-Picker-for-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Color-Picker-for-iOS-umbrella.h"; sourceTree = "<group>"; };
+		AFDF934A2427CFE9B8857CDD7B2DDD10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B71CB685F84E660C198B8F07F3147A30 /* Pods-M13Checkbox Demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-M13Checkbox Demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		BCF9396B035216D5227641E2C1B2CF6C /* Pods-M13Checkbox Demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-M13Checkbox Demo-dummy.m"; sourceTree = "<group>"; };
+		C5E5B7E9E8552BE782857ABCFD6C2C0E /* HRColorPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRColorPickerView.h; path = ColorPicker/HRColorPickerView.h; sourceTree = "<group>"; };
+		CA6DB1E821397B8BD9EC797B5DE403F6 /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h; path = CarouselCollectionViewLayout/Classes/Lib/Internal/PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h; sourceTree = "<group>"; };
+		CB6B0AD2AF4300F17380E8D1384A5709 /* PBDCarouselCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PBDCarouselCollectionViewLayout.m; path = CarouselCollectionViewLayout/Classes/Lib/PBDCarouselCollectionViewLayout.m; sourceTree = "<group>"; };
+		CCEF6400068F6E30018002EDC09A62BD /* Pods-M13Checkbox Demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-M13Checkbox Demo-frameworks.sh"; sourceTree = "<group>"; };
+		D3B8BD6235A883DD72F647247BCDB89B /* HRColorMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRColorMapView.h; path = ColorPicker/HRColorMapView.h; sourceTree = "<group>"; };
+		D3C335ACEF21050A8DFE4F75A4EC157C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DA2B90319E6F644F53961008AE5621D9 /* UIImage+CoreGraphics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CoreGraphics.m"; path = "ColorPicker/UIImage+CoreGraphics.m"; sourceTree = "<group>"; };
+		DB430D772ECAC946BD1908DE45AD4F4B /* HRColorInfoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HRColorInfoView.h; path = ColorPicker/HRColorInfoView.h; sourceTree = "<group>"; };
+		DBEF6B5830488D505E30C2E3C2F90AD9 /* Color_Picker_for_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Color_Picker_for_iOS.framework; path = "Color-Picker-for-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63B238A38D57427F461D8A956C39B20 /* Pods_M13Checkbox_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_M13Checkbox_Demo.framework; path = "Pods-M13Checkbox Demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A0C7935594B0C83B055CBBDACF1A40 /* PBDCarouselCollectionViewLayoutPropertiesCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PBDCarouselCollectionViewLayoutPropertiesCache.h; path = CarouselCollectionViewLayout/Classes/Lib/Internal/PBDCarouselCollectionViewLayoutPropertiesCache.h; sourceTree = "<group>"; };
+		FD8A9429931F5BD4D72673BFD849ED85 /* Pods-M13Checkbox Demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-M13Checkbox Demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FE176BB2D5CB052A70B1FC833A9B5A39 /* UIImage+CoreGraphics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CoreGraphics.h"; path = "ColorPicker/UIImage+CoreGraphics.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FE61F4926B849321A3DA6F52EA8D93D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC020AC34D5650ABDB999B8815B532AE /* Foundation.framework in Frameworks */,
+				077B950E4D8D81888C0340610F0AACEE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46AFCFBB188D2941F94EDE5714801CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3649BA151D71326A383604AAAAB5D33D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF4A0D2C3226BDAAB7EF7DD17065B969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2942337892B9929E6EC6FAD3F48EAF4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B1C1F187652DAA7106F0663EFFD8826 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBEF6B5830488D505E30C2E3C2F90AD9 /* Color_Picker_for_iOS.framework */,
+				217FC4EE17A2B5406F8917B942F33901 /* PBDCarouselCollectionViewLayout.framework */,
+				E63B238A38D57427F461D8A956C39B20 /* Pods_M13Checkbox_Demo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5056AB43A99D6149CE40BA05A244618F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BDCBA0F8CC15E5A2E7444283AA15F2E /* Color-Picker-for-iOS.modulemap */,
+				2BD970297C591ABE3A12A031A894BE4A /* Color-Picker-for-iOS.xcconfig */,
+				87D3C893687241B87D53DA29F34A234C /* Color-Picker-for-iOS-dummy.m */,
+				35B9902F335F036DF4395756167C71BD /* Color-Picker-for-iOS-prefix.pch */,
+				ACC2DF10769B8E501658DFE100CE6650 /* Color-Picker-for-iOS-umbrella.h */,
+				AFDF934A2427CFE9B8857CDD7B2DDD10 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Color-Picker-for-iOS";
+			sourceTree = "<group>";
+		};
+		68A8CD791DE15D7C7AD6109176A6B239 /* PBDCarouselCollectionViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A9CC9CB6CC053AA97E241D68F1BB5EA1 /* PBDCarouselCollectionViewLayout.h */,
+				CB6B0AD2AF4300F17380E8D1384A5709 /* PBDCarouselCollectionViewLayout.m */,
+				CA6DB1E821397B8BD9EC797B5DE403F6 /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h */,
+				61A606F7BE06E0749E0588CB2B89107D /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m */,
+				E9A0C7935594B0C83B055CBBDACF1A40 /* PBDCarouselCollectionViewLayoutPropertiesCache.h */,
+				7AC6B8DD8C25E5D0718CD3726C6882EC /* Support Files */,
+			);
+			name = PBDCarouselCollectionViewLayout;
+			path = PBDCarouselCollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		69D596EA0503ABACB9CFE3EB37DF55AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B2814FDE5C2D195D1E26CC6651C6DC3 /* Color-Picker-for-iOS */,
+				68A8CD791DE15D7C7AD6109176A6B239 /* PBDCarouselCollectionViewLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7AC6B8DD8C25E5D0718CD3726C6882EC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AD426826902BB7BB46C177DFE19D7A4 /* Info.plist */,
+				8C5B03A59D6058809898E17547727046 /* PBDCarouselCollectionViewLayout.modulemap */,
+				5D49560628F6447A6F7CA53D0D164159 /* PBDCarouselCollectionViewLayout.xcconfig */,
+				1FF525A348BC4E688924A1009BFF945E /* PBDCarouselCollectionViewLayout-dummy.m */,
+				AB033E02D7AE583C18A02BEDBD9FF9DA /* PBDCarouselCollectionViewLayout-prefix.pch */,
+				63C374A7BD1146A70AD222D7985DFED0 /* PBDCarouselCollectionViewLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PBDCarouselCollectionViewLayout";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				69D596EA0503ABACB9CFE3EB37DF55AC /* Pods */,
+				0B1C1F187652DAA7106F0663EFFD8826 /* Products */,
+				90CF0CE630C41C0BA43EB7F8919FAC14 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B2814FDE5C2D195D1E26CC6651C6DC3 /* Color-Picker-for-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A938B6260C2F367CF776737F5336755A /* HRBrightnessCursor.h */,
+				5D1434856720CBCCF02D5FFDB53CED7A /* HRBrightnessCursor.m */,
+				9BDB2421D4AEFCD8907287754173E58C /* HRBrightnessSlider.h */,
+				3858C925E875C5334809B56F5DE42B4F /* HRBrightnessSlider.m */,
+				A87CB1DDAC69AC44B2EF2B1AE05D43B3 /* HRColorCursor.h */,
+				1A8E405528BBE3485A77EDD2BE053008 /* HRColorCursor.m */,
+				DB430D772ECAC946BD1908DE45AD4F4B /* HRColorInfoView.h */,
+				048AAE6EAB96E895C6D48A6DCD9A3C64 /* HRColorInfoView.m */,
+				D3B8BD6235A883DD72F647247BCDB89B /* HRColorMapView.h */,
+				1582F485504EA4B8A7157F50AB2D6C13 /* HRColorMapView.m */,
+				C5E5B7E9E8552BE782857ABCFD6C2C0E /* HRColorPickerView.h */,
+				21FCFADB86293937B26008BC2373DB95 /* HRColorPickerView.m */,
+				560CB71AAAF1F2E22A8E35931CAC19B2 /* HRHSVColorUtil.h */,
+				12CF914BCCFAB82A0E496D4DCC584054 /* HRHSVColorUtil.m */,
+				FE176BB2D5CB052A70B1FC833A9B5A39 /* UIImage+CoreGraphics.h */,
+				DA2B90319E6F644F53961008AE5621D9 /* UIImage+CoreGraphics.m */,
+				5056AB43A99D6149CE40BA05A244618F /* Support Files */,
+			);
+			name = "Color-Picker-for-iOS";
+			path = "Color-Picker-for-iOS";
+			sourceTree = "<group>";
+		};
+		90CF0CE630C41C0BA43EB7F8919FAC14 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B62D8C025854F2D0422B990B34A46CE6 /* Pods-M13Checkbox Demo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B62D8C025854F2D0422B990B34A46CE6 /* Pods-M13Checkbox Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D3C335ACEF21050A8DFE4F75A4EC157C /* Info.plist */,
+				424AB35E562C2ED46B2E946BA27B98C5 /* Pods-M13Checkbox Demo.modulemap */,
+				FD8A9429931F5BD4D72673BFD849ED85 /* Pods-M13Checkbox Demo-acknowledgements.markdown */,
+				B71CB685F84E660C198B8F07F3147A30 /* Pods-M13Checkbox Demo-acknowledgements.plist */,
+				BCF9396B035216D5227641E2C1B2CF6C /* Pods-M13Checkbox Demo-dummy.m */,
+				CCEF6400068F6E30018002EDC09A62BD /* Pods-M13Checkbox Demo-frameworks.sh */,
+				7DB842CB8BFA7BA2A70EF5D4B9DCA3BB /* Pods-M13Checkbox Demo-resources.sh */,
+				714269CAFA4286FFCAF560279DC8E121 /* Pods-M13Checkbox Demo-umbrella.h */,
+				5653368601D3577BF0D2368B9EA027F1 /* Pods-M13Checkbox Demo.debug.xcconfig */,
+				8E090B0D09DB3C3B2DDE766C5FCF8E9B /* Pods-M13Checkbox Demo.release.xcconfig */,
+			);
+			name = "Pods-M13Checkbox Demo";
+			path = "Target Support Files/Pods-M13Checkbox Demo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		471E2DC1212320926615B22CE0A1A66F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42364581B3C9360862FE47A1C2502069 /* Color-Picker-for-iOS-umbrella.h in Headers */,
+				439AF6A4B4435633A358FD1D9D60B58E /* HRBrightnessCursor.h in Headers */,
+				5E599C00A8EFEE7929240153AAABFC83 /* HRBrightnessSlider.h in Headers */,
+				567C2C9AB63B4D965B060CA1DA9D9B33 /* HRColorCursor.h in Headers */,
+				F55AC0651CF175205E1F7CDD7BBEC84F /* HRColorInfoView.h in Headers */,
+				01294EAF223856AA181E3DD6D9E8EC65 /* HRColorMapView.h in Headers */,
+				FE540AB638176ECBADC41A9AFEF56B96 /* HRColorPickerView.h in Headers */,
+				115F824F0E2805E3359CE03964891A15 /* HRHSVColorUtil.h in Headers */,
+				C5FA65B20F9BCBDD86592B4036F2A69C /* UIImage+CoreGraphics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC2C298A2F917F4AFC55EBFBD1606A77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68F4FBEBF7BE8C4BDEB91E1315BDDB4 /* PBDCarouselCollectionViewLayout-umbrella.h in Headers */,
+				93D4052DB18C73314B0709DF0E51CEFF /* PBDCarouselCollectionViewLayout.h in Headers */,
+				A3D24E1EE7D52F06BF12FBB89789F63D /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h in Headers */,
+				940FAA7FE8AA8D38C0A0E813A4617D16 /* PBDCarouselCollectionViewLayoutPropertiesCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85605E59F5DB95F06BD555577A68AC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F429EC3EBDF7B0D73C967AF144C9B9D /* Pods-M13Checkbox Demo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B25E1601C445A6A75E55543DB48D091 /* Color-Picker-for-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FAED07D8636F40EFAD0C6B535779F5 /* Build configuration list for PBXNativeTarget "Color-Picker-for-iOS" */;
+			buildPhases = (
+				AD22C3C298C7F9EFE7D77FCB9FD2B737 /* Sources */,
+				46AFCFBB188D2941F94EDE5714801CAE /* Frameworks */,
+				471E2DC1212320926615B22CE0A1A66F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Color-Picker-for-iOS";
+			productName = "Color-Picker-for-iOS";
+			productReference = DBEF6B5830488D505E30C2E3C2F90AD9 /* Color_Picker_for_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9F180E7326D12CF3F5D96F9CB38C3BC4 /* Pods-M13Checkbox Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94AF25B5670C18F5F4D83A6F1971C8B8 /* Build configuration list for PBXNativeTarget "Pods-M13Checkbox Demo" */;
+			buildPhases = (
+				E105A6FCC85620A2512C23F396F29CBF /* Sources */,
+				AF4A0D2C3226BDAAB7EF7DD17065B969 /* Frameworks */,
+				D85605E59F5DB95F06BD555577A68AC3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A8D9AA37970F27A389609DC235A9538 /* PBXTargetDependency */,
+				4ACB46419585217A06FA1259B298C7A5 /* PBXTargetDependency */,
+			);
+			name = "Pods-M13Checkbox Demo";
+			productName = "Pods-M13Checkbox Demo";
+			productReference = E63B238A38D57427F461D8A956C39B20 /* Pods_M13Checkbox_Demo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DDFD0623C695330DBB9B5DCFD0E779C4 /* PBDCarouselCollectionViewLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27B6F9B31DAFCCBBFD5FF9931CD96F2 /* Build configuration list for PBXNativeTarget "PBDCarouselCollectionViewLayout" */;
+			buildPhases = (
+				50F7EE039F735C40CF15E1F353280284 /* Sources */,
+				2FE61F4926B849321A3DA6F52EA8D93D /* Frameworks */,
+				AC2C298A2F917F4AFC55EBFBD1606A77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PBDCarouselCollectionViewLayout;
+			productName = PBDCarouselCollectionViewLayout;
+			productReference = 217FC4EE17A2B5406F8917B942F33901 /* PBDCarouselCollectionViewLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0B1C1F187652DAA7106F0663EFFD8826 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B25E1601C445A6A75E55543DB48D091 /* Color-Picker-for-iOS */,
+				DDFD0623C695330DBB9B5DCFD0E779C4 /* PBDCarouselCollectionViewLayout */,
+				9F180E7326D12CF3F5D96F9CB38C3BC4 /* Pods-M13Checkbox Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50F7EE039F735C40CF15E1F353280284 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70F0DA38C400C8BD4291AFB2A19AAE7 /* PBDCarouselCollectionViewLayout-dummy.m in Sources */,
+				73CA144112FF73D7A37EADE1FB243B28 /* PBDCarouselCollectionViewLayout.m in Sources */,
+				2FB0ADA0B68D6333125D559A574796E6 /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD22C3C298C7F9EFE7D77FCB9FD2B737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F274887D25303A29329ADA692F35D9 /* Color-Picker-for-iOS-dummy.m in Sources */,
+				3E0FDC779516CC4FA0CE85EEAEA0A9AF /* HRBrightnessCursor.m in Sources */,
+				C966B983E62ECE8068F66FD16A14D4D8 /* HRBrightnessSlider.m in Sources */,
+				318A2BBB61154F1C07101169EC70A4E3 /* HRColorCursor.m in Sources */,
+				49795EFB9BBAC6216B1996DBC068F006 /* HRColorInfoView.m in Sources */,
+				78D703BBB33BB9678A9075D3E7C27AC3 /* HRColorMapView.m in Sources */,
+				D00D3957D07F1213461BC0B7EE367979 /* HRColorPickerView.m in Sources */,
+				670B2BAAE9BCE7C9DFD43132089ECA71 /* HRHSVColorUtil.m in Sources */,
+				64355F5F2F5C159B9F8B7259D9428584 /* UIImage+CoreGraphics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E105A6FCC85620A2512C23F396F29CBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D3F2C41CA3ECBA8B6F2652770C5FB9A /* Pods-M13Checkbox Demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4ACB46419585217A06FA1259B298C7A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PBDCarouselCollectionViewLayout;
+			target = DDFD0623C695330DBB9B5DCFD0E779C4 /* PBDCarouselCollectionViewLayout */;
+			targetProxy = 1307A2364EC7069131F648732E7BCD7A /* PBXContainerItemProxy */;
+		};
+		8A8D9AA37970F27A389609DC235A9538 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Color-Picker-for-iOS";
+			target = 3B25E1601C445A6A75E55543DB48D091 /* Color-Picker-for-iOS */;
+			targetProxy = 13FF4E6CA6852341E77C8EE238DC5057 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21170ACD6D679A6A465A700945FEE962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BD970297C591ABE3A12A031A894BE4A /* Color-Picker-for-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Color-Picker-for-iOS/Color-Picker-for-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Color-Picker-for-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Color-Picker-for-iOS/Color-Picker-for-iOS.modulemap";
+				PRODUCT_NAME = Color_Picker_for_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		55AADEDDB030C7FA4DDCECD3AF606F17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D49560628F6447A6F7CA53D0D164159 /* PBDCarouselCollectionViewLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PBDCarouselCollectionViewLayout/PBDCarouselCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PBDCarouselCollectionViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PBDCarouselCollectionViewLayout/PBDCarouselCollectionViewLayout.modulemap";
+				PRODUCT_NAME = PBDCarouselCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5783120931B00BB2C8DAA0ED708C06E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5653368601D3577BF0D2368B9EA027F1 /* Pods-M13Checkbox Demo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-M13Checkbox Demo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-M13Checkbox Demo/Pods-M13Checkbox Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_M13Checkbox_Demo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F9224530522DD3C735EC96CF142642E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B57951D085A1B98A97F8A1062A5E5C5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C084B088ACB131A88C01624908C50367 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D49560628F6447A6F7CA53D0D164159 /* PBDCarouselCollectionViewLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PBDCarouselCollectionViewLayout/PBDCarouselCollectionViewLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PBDCarouselCollectionViewLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PBDCarouselCollectionViewLayout/PBDCarouselCollectionViewLayout.modulemap";
+				PRODUCT_NAME = PBDCarouselCollectionViewLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF18E65CC0E29687BD34C19B0A686575 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BD970297C591ABE3A12A031A894BE4A /* Color-Picker-for-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Color-Picker-for-iOS/Color-Picker-for-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Color-Picker-for-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Color-Picker-for-iOS/Color-Picker-for-iOS.modulemap";
+				PRODUCT_NAME = Color_Picker_for_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E8A4E3FF5EB8CC57744C6D56C69244CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E090B0D09DB3C3B2DDE766C5FCF8E9B /* Pods-M13Checkbox Demo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-M13Checkbox Demo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-M13Checkbox Demo/Pods-M13Checkbox Demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_M13Checkbox_Demo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19FAED07D8636F40EFAD0C6B535779F5 /* Build configuration list for PBXNativeTarget "Color-Picker-for-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF18E65CC0E29687BD34C19B0A686575 /* Debug */,
+				21170ACD6D679A6A465A700945FEE962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57951D085A1B98A97F8A1062A5E5C5B /* Debug */,
+				6F9224530522DD3C735EC96CF142642E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94AF25B5670C18F5F4D83A6F1971C8B8 /* Build configuration list for PBXNativeTarget "Pods-M13Checkbox Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5783120931B00BB2C8DAA0ED708C06E6 /* Debug */,
+				E8A4E3FF5EB8CC57744C6D56C69244CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F27B6F9B31DAFCCBBFD5FF9931CD96F2 /* Build configuration list for PBXNativeTarget "PBDCarouselCollectionViewLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C084B088ACB131A88C01624908C50367 /* Debug */,
+				55AADEDDB030C7FA4DDCECD3AF606F17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
