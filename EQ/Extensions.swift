@@ -52,7 +52,7 @@ extension UIColor {
 
 extension UIImage {
     
-    static let names: [String] = ["Sports", "Personal", "Education", "Friends", "Reading", "Music", "Family", "Entertainment", "Cleaning"]
+    static let names: [String] = ["Sports", "Personal Project", "Education", "Social", "Reading"]
     
 }
 

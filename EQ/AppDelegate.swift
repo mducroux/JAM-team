@@ -12,10 +12,16 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+<<<<<<< HEAD
     let userDefaults = UserDefaults.standard
 
+=======
+    
+>>>>>>> cbfb9395873e071fdfcb9a92754c0d6729f721e2
     
     var window: UIWindow?
+    
+    
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
