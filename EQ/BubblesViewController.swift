@@ -6,6 +6,8 @@ import CoreData
 
 class BubblesViewController: UIViewController {
     
+    //var set = Set<String>()
+    
     //MARK: Properties
     @IBOutlet var label: UILabel!
     var n = 5
@@ -104,17 +106,50 @@ class BubblesViewController: UIViewController {
 // MARK: - MagneticDelegate
 extension BubblesViewController: MagneticDelegate {
     
+//    @IBAction func add(_ sender: Any) {
+//        let listObject = UserDefaults.standard.object(forKey: "list")
+//        var list: [String] = []
+//        if let tempList = listObject as? [String] {
+//            list = tempList
+//            list.append(textField.text!)
+//        } else {
+//            list = [textField.text!]
+//        }
+//        UserDefaults.standard.set(list, forKey: "list")
+//        textField.text = ""
+//    }
+    
+    
     func magnetic(_ magnetic: Magnetic, didSelect node: Node) {
+        
+//        let decoded  = UserDefaults.standard.object(forKey: "set") as! Data
+//        let decodedSet = NSKeyedUnarchiver.unarchiveObject(with: decoded) as! Set<String>
+//        set = decodedSet
+//        set.insert(node.text!)
+//        let encodedData: Data = NSKeyedArchiver.archivedData(withRootObject: set)
+//        UserDefaults.standard.set(encodedData, forKey: "set")
+//        UserDefaults.standard.synchronize()
+//        
         if n != 1 {
             n = n - 1
             label.text = "Choose \(n) Categories"
         } else {
             self.present(PageViewController(), animated: true, completion:nil)
         }
+        
         print("didSelect -> \(node)")
     }
     
     func magnetic(_ magnetic: Magnetic, didDeselect node: Node) {
+        
+//        let setObject = UserDefaults.standard.object(forKey: "set")
+//
+//        if let tempSet = setObject as? Set<String> {
+//            set = tempSet
+//            set.remove(node.text!)
+//            UserDefaults.standard.set(set, forKey: "set")
+//        }
+        
         n = n + 1
         label.text = "Choose \(n) Categories"
         print("didDeselect -> \(node)")
@@ -124,11 +159,13 @@ extension BubblesViewController: MagneticDelegate {
 
 // MARK: - ImageNode
 class ImageNode: Node {
+    
     override var image: UIImage? {
         didSet {
             sprite.texture = image.map { SKTexture(image: $0) }
         }
     }
+    
     override func selectedAnimation() {}
     override func deselectedAnimation() {}
 }
