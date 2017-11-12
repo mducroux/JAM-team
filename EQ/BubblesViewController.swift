@@ -1,6 +1,8 @@
 
 import SpriteKit
 import Magnetic
+import UIKit
+import CoreData
 
 class BubblesViewController: UIViewController {
     
@@ -24,9 +26,35 @@ class BubblesViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
+        super.viewDidAppear(animated)
+
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            print("Not first launch.")
+        } else {
+            print("First launch, setting UserDefault.")
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+            UserDefaults.standard.set(0 , forKey:"keyDate")
+        }
+        
+        let date = Date()
+        let calendar = Calendar.current
+        let day = calendar.component(.day, from: date)
+
+        let previousDay = UserDefaults.standard.object(forKey: "keyDate") as! Int
+        
+        if (previousDay == day) {
+            self.present(PageViewController(), animated: true, completion:nil)
+            return
+        }
+        
+        UserDefaults.standard.set(day, forKey:"keyDate")
         add(nil)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
     @IBAction func add(_ sender: UIControl?) {
@@ -35,10 +63,6 @@ class BubblesViewController: UIViewController {
             let node = Node(text: name.capitalized, image: UIImage(named: name), color: color, radius: 50)
             magnetic.addChild(node)
         }
-        
-        // Image Node: image displayed by default
-        // let node = ImageNode(text: name.capitalized, image: UIImage(named: name), color: color, radius: 40)
-        // magnetic.addChild(node)
     }
     
     @IBAction func reset(_ sender: UIControl?) {

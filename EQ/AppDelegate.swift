@@ -12,12 +12,11 @@ import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    let userDefaults = UserDefaults.standard
     
-    //userDefaults.set(NSDate(), forKey: "date")
-
     
     var window: UIWindow?
+    
+    
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
