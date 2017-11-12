@@ -17,16 +17,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var tasks: [NSManagedObject] = []
+    let myGoals = ["            Sport", "            Personal Project", "            Education", "            Social", "            Reading"]
     
     //@IBOutlet weak var checkbox: M13Checkbox!
     var checkboxes = [M13Checkbox]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        for _ in 1...5 {
-            checkboxes.append(M13Checkbox(frame: CGRect(x: 20.0, y: 0.0, width: 80.0, height: 80.0)))
+        
+        for pixel in 1...5 {
+            checkboxes.append(M13Checkbox(frame: CGRect(x: 20.0, y: -480.0 + 100.0 * Double(pixel), width: 60.0, height: 60.0)))
         }
+        //let zipped = Array(zip(myGoals, checkboxes))
         print(checkboxes.count)
     /**
  /////////  begin of delete
@@ -71,7 +73,7 @@ class ViewController: UIViewController {
         //tableView.dataSource    =   self
         if (tableView != nil) {
             self.tableView.backgroundColor = UIColor.white
-            loadGoals(tasks: ["Sport", "Personal Project", "Education", "Social", "Reading"])
+            loadGoals(tasks: myGoals)
             tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         }
     }
@@ -113,6 +115,7 @@ class ViewController: UIViewController {
                                      insertInto: managedContext)
         
         task.setValue(name, forKeyPath: "name")
+        task.setValue(false, forKeyPath: "checked")
         
         do {
             try managedContext.save()
@@ -128,6 +131,33 @@ class ViewController: UIViewController {
             save(name: task)
         }
     }
+    
+    func change(name: String, checked: Bool) {
+//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+//            return
+//        }
+        
+        var value: NSManagedObject = NSManagedObject();
+        for item in tasks {
+            if(item.value(forKeyPath: "name") as! String == name) {
+                value = item
+            }
+        }
+        
+        
+//        let managedContext = appDelegate.persistentContainer.viewContext
+//        let entity = NSEntityDescription.entity(forEntityName: "Task", in: managedContext)!
+//        let task = NSManagedObject(entity: entity,insertInto: managedContext)
+        
+        value.setValue(checked, forKeyPath: "checked")
+        
+//        do {
+//            try managedContext.save()
+//            tasks.append(task)
+//        } catch let error as NSError {
+//            print("Could not save. \(error), \(error.userInfo)")
+//        }
+    }
 
 
 }
@@ -142,7 +172,7 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(indexPath.row.description)
+        //print(indexPath.row.description)
         let task = tasks[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 //        let checkbox = M13Checkbox(frame: CGRect(x: 20.0, y: 0.0, width: 80.0, height: 80.0))
@@ -150,9 +180,16 @@ extension ViewController: UITableViewDataSource {
         
         /// here we handle our checkboxes
         let checkbox = checkboxes[indexPath.row]
+
+        if (checkbox.checkState == M13Checkbox.CheckState.checked) {
+            task.setValue(true, forKey: "checked")
+        } else { task.setValue(false, forKey: "checked") }
+
         checkbox.checkmarkLineWidth = CGFloat(2.8)
         checkbox.boxLineWidth = CGFloat(2.8)
         checkbox.tintColor = UIColor(red:0.19, green:0.39, blue:0.48, alpha:1.0) //.init(red: CGFloat(48), green: CGFloat(100), blue: CGFloat(122), alpha: CGFloat(1))
+        if (task.value(forKey: "checked") as! Bool) { checkbox.setCheckState(M13Checkbox.CheckState.checked, animated: true) }
+        else { checkbox.setCheckState(M13Checkbox.CheckState.unchecked, animated: true) }
         cell.contentView.addSubview(checkbox)
         
         /// here we handle the cell & its text
@@ -164,6 +201,28 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
-
+//class CustomCell: UITableViewCell {
+//    
+//    @IBOutlet weak var titleLabel: UILabel!
+//    @IBOutlet weak var check: M13Checkbox!
+//    
+//    //Handles the cell selected state
+////    var checked: Bool! {
+////        didSet {
+////            if (self.checked == true) {
+////                self.check.image = UIImage(named: "CheckBox-Selected")
+////            }else{
+////                self.tickImageView.image = UIImage(named: "CheckBox-Normal")
+////            }
+////        }
+////    }
+//    
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+////        checked = false
+//        self.layoutMargins = UIEdgeInsets.zero
+//        self.separatorInset = UIEdgeInsets.zero
+//}
+//}
 
 
