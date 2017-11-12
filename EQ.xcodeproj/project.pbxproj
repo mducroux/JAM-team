@@ -22,7 +22,6 @@
 		A14ECE8D1FB79CA100113DB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A14ECE8B1FB79CA100113DB7 /* Main.storyboard */; };
 		A14ECE911FB79CC100113DB7 /* EQ.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A14ECE8E1FB79CC100113DB7 /* EQ.xcdatamodeld */; };
 		A14ECE9E1FB79F7E00113DB7 /* Magnetic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A14ECE9B1FB79F6B00113DB7 /* Magnetic.framework */; };
-		A14ECEA01FB7B78D00113DB7 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14ECE9F1FB7B78D00113DB7 /* StartViewController.swift */; };
 		A1C1273B1FB74A4F0074F04B /* Bubbles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C1273A1FB74A4F0074F04B /* Bubbles.storyboard */; };
 		A1C1273D1FB74BC30074F04B /* BubblesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C1273C1FB74BC30074F04B /* BubblesViewController.swift */; };
 		BAD8DFCFDE7D5675AE4B6E27 /* Pods_EQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD27492F050EEF32D5BCC370 /* Pods_EQTests.framework */; };
@@ -126,7 +125,6 @@
 		A14ECE8F1FB79CC100113DB7 /* EQ.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EQ.xcdatamodel; sourceTree = "<group>"; };
 		A14ECE901FB79CC100113DB7 /* EQ.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = EQ.entitlements; sourceTree = "<group>"; };
 		A14ECE951FB79F6B00113DB7 /* Magnetic.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Magnetic.xcodeproj; path = "../../../Downloads/Magnetic-master/Magnetic.xcodeproj"; sourceTree = "<group>"; };
-		A14ECE9F1FB7B78D00113DB7 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A1C1273A1FB74A4F0074F04B /* Bubbles.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bubbles.storyboard; sourceTree = "<group>"; };
 		A1C1273C1FB74BC30074F04B /* BubblesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubblesViewController.swift; sourceTree = "<group>"; };
 		BD27492F050EEF32D5BCC370 /* Pods_EQTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EQTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,7 +215,6 @@
 				A14ECE871FB79C8A00113DB7 /* ViewController.swift */,
 				11BD929B1FB72E2200946FFD /* Info.plist */,
 				A14ECE5C1FB7690100113DB7 /* Extensions.swift */,
-				A14ECE9F1FB7B78D00113DB7 /* StartViewController.swift */,
 			);
 			path = EQ;
 			sourceTree = "<group>";
@@ -533,7 +530,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A14ECE891FB79C8A00113DB7 /* ViewController.swift in Sources */,
-				A14ECEA01FB7B78D00113DB7 /* StartViewController.swift in Sources */,
 				A14ECE5D1FB7690100113DB7 /* Extensions.swift in Sources */,
 				A1C1273D1FB74BC30074F04B /* BubblesViewController.swift in Sources */,
 				A14ECE911FB79CC100113DB7 /* EQ.xcdatamodeld in Sources */,

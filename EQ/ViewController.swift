@@ -24,12 +24,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
         for pixel in 1...5 {
             checkboxes.append(M13Checkbox(frame: CGRect(x: 20.0, y: -480.0 + 100.0 * Double(pixel), width: 60.0, height: 60.0)))
         }
         //let zipped = Array(zip(myGoals, checkboxes))
         print(checkboxes.count)
+
     /**
  /////////  begin of delete
  */
