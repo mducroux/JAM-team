@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115BC4311FB73CE500597DE2 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115BC42F1FB73CE500597DE2 /* PageViewController.swift */; };
+		115BC4321FB73CE500597DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115BC4301FB73CE500597DE2 /* ViewController.swift */; };
+		115BC4351FB73CEF00597DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115BC4331FB73CEF00597DE2 /* Main.storyboard */; };
+		118293171FB7CF4B00C4CEBA /* M13Checkbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118293161FB7CF4200C4CEBA /* M13Checkbox.framework */; };
+		1182936D1FB7D4D100C4CEBA /* Pods_M13Checkbox_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118293701FB7D4D100C4CEBA /* Pods_M13Checkbox_Demo.framework */; };
 		11BD928C1FB72E2200946FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD928B1FB72E2200946FFD /* AppDelegate.swift */; };
 		11BD92971FB72E2200946FFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11BD92961FB72E2200946FFD /* Assets.xcassets */; };
 		11BD929A1FB72E2200946FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD92981FB72E2200946FFD /* LaunchScreen.storyboard */; };
@@ -23,6 +28,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		118293131FB7CF4200C4CEBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1182930D1FB7CF4100C4CEBA /* M13Checkbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EA6720161C7D0296008054BA;
+			remoteInfo = "M13Checkbox Demo";
+		};
+		118293151FB7CF4200C4CEBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1182930D1FB7CF4100C4CEBA /* M13Checkbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EA96F8FB1CBEB4CC0066C6B7;
+			remoteInfo = M13Checkbox;
+		};
+		118293771FB7D50400C4CEBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118293711FB7D50400C4CEBA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DBEF6B5830488D505E30C2E3C2F90AD9;
+			remoteInfo = "Color-Picker-for-iOS";
+		};
+		118293791FB7D50400C4CEBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118293711FB7D50400C4CEBA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 217FC4EE17A2B5406F8917B942F33901;
+			remoteInfo = PBDCarouselCollectionViewLayout;
+		};
+		1182937B1FB7D50400C4CEBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 118293711FB7D50400C4CEBA /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E63B238A38D57427F461D8A956C39B20;
+			remoteInfo = "Pods-M13Checkbox Demo";
+		};
 		11BD92A11FB72E2300946FFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11BD92801FB72E2200946FFD /* Project object */;
@@ -60,6 +100,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		115BC42F1FB73CE500597DE2 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		115BC4301FB73CE500597DE2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		115BC4341FB73CEF00597DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1182930D1FB7CF4100C4CEBA /* M13Checkbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = M13Checkbox.xcodeproj; path = "../EQ assets/M13Checkbox-3.2.1/M13Checkbox.xcodeproj"; sourceTree = "<group>"; };
+		118293701FB7D4D100C4CEBA /* Pods_M13Checkbox_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_M13Checkbox_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118293711FB7D50400C4CEBA /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = "../EQ assets/M13Checkbox-3.2.1/Pods/Pods.xcodeproj"; sourceTree = "<group>"; };
 		11BD92881FB72E2200946FFD /* EQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11BD928B1FB72E2200946FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11BD92961FB72E2200946FFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,7 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A14ECE9E1FB79F7E00113DB7 /* Magnetic.framework in Frameworks */,
+				1182936D1FB7D4D100C4CEBA /* Pods_M13Checkbox_Demo.framework in Frameworks */,
+				118293171FB7CF4B00C4CEBA /* M13Checkbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,14 +152,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		118293001FB7CF3400C4CEBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				118293711FB7D50400C4CEBA /* Pods.xcodeproj */,
+				1182930D1FB7CF4100C4CEBA /* M13Checkbox.xcodeproj */,
+				118293701FB7D4D100C4CEBA /* Pods_M13Checkbox_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1182930E1FB7CF4100C4CEBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				118293141FB7CF4200C4CEBA /* M13Checkbox Demo.app */,
+				118293161FB7CF4200C4CEBA /* M13Checkbox.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		118293721FB7D50400C4CEBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				118293781FB7D50400C4CEBA /* Color_Picker_for_iOS.framework */,
+				1182937A1FB7D50400C4CEBA /* PBDCarouselCollectionViewLayout.framework */,
+				1182937C1FB7D50400C4CEBA /* Pods_M13Checkbox_Demo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		11BD927F1FB72E2200946FFD = {
 			isa = PBXGroup;
 			children = (
 				11BD928A1FB72E2200946FFD /* EQ */,
 				11BD92A31FB72E2300946FFD /* EQTests */,
 				11BD92891FB72E2200946FFD /* Products */,
-				D5440DB214B2705A4A84227C /* Pods */,
-				9AF33E7D5B601F5CD4E068FD /* Frameworks */,
+				118293001FB7CF3400C4CEBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,6 +345,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 1182930E1FB7CF4100C4CEBA /* Products */;
+					ProjectRef = 1182930D1FB7CF4100C4CEBA /* M13Checkbox.xcodeproj */;
+				},
+				{
+					ProductGroup = 118293721FB7D50400C4CEBA /* Products */;
+					ProjectRef = 118293711FB7D50400C4CEBA /* Pods.xcodeproj */;
 					ProductGroup = A14ECE961FB79F6B00113DB7 /* Products */;
 					ProjectRef = A14ECE951FB79F6B00113DB7 /* Magnetic.xcodeproj */;
 				},
@@ -283,18 +364,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A14ECE9B1FB79F6B00113DB7 /* Magnetic.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Magnetic.framework;
-			remoteRef = A14ECE9A1FB79F6B00113DB7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A14ECE9D1FB79F6B00113DB7 /* Example.app */ = {
+		118293141FB7CF4200C4CEBA /* M13Checkbox Demo.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = Example.app;
-			remoteRef = A14ECE9C1FB79F6B00113DB7 /* PBXContainerItemProxy */;
+			path = "M13Checkbox Demo.app";
+			remoteRef = 118293131FB7CF4200C4CEBA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		118293161FB7CF4200C4CEBA /* M13Checkbox.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = M13Checkbox.framework;
+			remoteRef = 118293151FB7CF4200C4CEBA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		118293781FB7D50400C4CEBA /* Color_Picker_for_iOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Color_Picker_for_iOS.framework;
+			remoteRef = 118293771FB7D50400C4CEBA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1182937A1FB7D50400C4CEBA /* PBDCarouselCollectionViewLayout.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = PBDCarouselCollectionViewLayout.framework;
+			remoteRef = 118293791FB7D50400C4CEBA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1182937C1FB7D50400C4CEBA /* Pods_M13Checkbox_Demo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_M13Checkbox_Demo.framework;
+			remoteRef = 1182937B1FB7D50400C4CEBA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
